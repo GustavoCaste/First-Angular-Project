@@ -2,13 +2,44 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component';
+import { RodapeComponent } from './componentes/rodape/rodape.component';
+import { CriarPensamentoComponent } from './componentes/pensamentos/criar-pensamento/criar-pensamento.component';
+import { FormsModule } from '@angular/forms';
+import { ListarPensamentoComponent } from './componentes/pensamentos/listar-pensamento/listar-pensamento.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  {
+    path: 'criarPensamento',
+    component: CriarPensamentoComponent,
+  },
+  {
+    path: '',
+   redirectTo: 'listarPensamento',
+   pathMatch: 'full'
+  },
+  {
+    path: 'listarPensamento',
+    component: ListarPensamentoComponent,
+  }
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CabecalhoComponent,
+    RodapeComponent,
+    CriarPensamentoComponent,
+    ListarPensamentoComponent,
+
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule,
+    RouterModule.forRoot(routes),
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
