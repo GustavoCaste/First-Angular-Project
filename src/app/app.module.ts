@@ -8,6 +8,7 @@ import { CriarPensamentoComponent } from './componentes/pensamentos/criar-pensam
 import { FormsModule } from '@angular/forms';
 import { ListarPensamentoComponent } from './componentes/pensamentos/listar-pensamento/listar-pensamento.component';
 import { RouterModule, Routes } from '@angular/router';
+import { PensamentoComponent } from './componentes/pensamentos/pensamento/pensamento.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,7 @@ const routes: Routes = [
     RodapeComponent,
     CriarPensamentoComponent,
     ListarPensamentoComponent,
+    PensamentoComponent,
 
   ],
   imports: [
