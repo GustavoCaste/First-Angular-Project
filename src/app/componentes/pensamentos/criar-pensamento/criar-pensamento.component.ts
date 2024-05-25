@@ -34,7 +34,7 @@ export class CriarPensamentoComponent implements OnInit {
   )
   }
 
-  cancelarPensamento(){
+  cancelar(){
     this.router.navigate(['/listarPensamento'])
   }
 

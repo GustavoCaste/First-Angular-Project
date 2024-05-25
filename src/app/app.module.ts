@@ -11,6 +11,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PensamentoComponent } from './componentes/pensamentos/pensamento/pensamento.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ExcluirPensamentoComponent } from './componentes/pensamentos/excluir-pensamento/excluir-pensamento.component';
+import { EditarPensamentoComponent } from './componentes/pensamentos/editar-pensamento/editar-pensamento.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,10 @@ const routes: Routes = [
   {
     path: 'pensamentos/excluirPensamento/:id',
     component: ExcluirPensamentoComponent
+  },
+  {
+    path: 'pensamentos/editarPensamento/:id',
+    component: EditarPensamentoComponent
   }
 ];
 
@@ -40,7 +45,8 @@ const routes: Routes = [
     CriarPensamentoComponent,
     ListarPensamentoComponent,
     PensamentoComponent,
-    ExcluirPensamentoComponent
+    ExcluirPensamentoComponent,
+    EditarPensamentoComponent
 
   ],
   imports: [
