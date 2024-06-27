@@ -2,7 +2,7 @@ import { PensamentoService } from './../pensamento.service';
 import { Component, OnInit } from '@angular/core';
 import { Pensamento } from '../pensamento';
 import { Router } from '@angular/router';
-import { FormBuilder, FormControl, FormGroup, FormsModule } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, FormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-criar-pensamento',
@@ -22,9 +22,16 @@ export class CriarPensamentoComponent implements OnInit {
 
   ngOnInit(): void {
     this.formulario = this.formBuilder.group({
-      conteudo: new FormControl('Formulário Reativo'),
-      autoria: new FormControl('Angular'),
-      modelo: new FormControl('modelo1')
+      conteudo: ['', Validators.compose([
+        Validators.required,
+        Validators.pattern(/(.|\s)*\S(.|\s)*/),
+        Validators.minLength(3)
+      ])],
+      autoria: ['', Validators.compose([
+        Validators.required,
+        Validators.minLength(3)
+      ])],
+      modelo: ['modelo1']
     })
   }
 
@@ -33,11 +40,13 @@ export class CriarPensamentoComponent implements OnInit {
 
   criarPensamento(){
     //Injeta o valor do formulário no momento em que o cria
-    this.service.criar(this.formulario.value).subscribe(() => {
-      this.router.navigate(['/listarPensamento'])
-    }
+    console.log(this.formulario)
+    if(this.formulario.valid){
+      this.service.criar(this.formulario.value).subscribe(() => {
+       this.router.navigate(['/listarPensamento'])
+     })
 
-  )
+    }
   }
 
   cancelar(){
