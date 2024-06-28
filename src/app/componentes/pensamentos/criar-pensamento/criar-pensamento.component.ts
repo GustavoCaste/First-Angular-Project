@@ -40,7 +40,7 @@ export class CriarPensamentoComponent implements OnInit {
 
   criarPensamento(){
     //Injeta o valor do formulário no momento em que o cria
-    console.log(this.formulario)
+    console.log(this.formulario.get('autoria')?.errors)
     if(this.formulario.valid){
       this.service.criar(this.formulario.value).subscribe(() => {
        this.router.navigate(['/listarPensamento'])
