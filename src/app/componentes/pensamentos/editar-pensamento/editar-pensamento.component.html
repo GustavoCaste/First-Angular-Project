@@ -20,7 +20,7 @@
     </div>
     <div class="mensagem__erro"
     *ngIf="formulario.get('conteudo')?.errors?.['minlength'] && formulario.get('conteudo')?.touched">
-      Autoria precisa ter 3 ou mais caracteres!
+      Pensamento precisa ter 3 ou mais caracteres!
     </div>
     <label for="autoria">Autoria ou fonte</label>
     <input
@@ -41,7 +41,7 @@
     </div>
     <div class="mensagem__erro"
     *ngIf="formulario.get('autoria')?.errors?.['minusculo'] && formulario.get('autoria')?.touched">
-      Autoria precisa ter 3 ou mais caracteres!
+      Autoria não pode possuir letras maiusculas!
     </div>
 
     <label for="modelo">Selecione o modelo do card:</label>

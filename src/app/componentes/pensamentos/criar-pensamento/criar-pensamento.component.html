@@ -20,7 +20,7 @@
     </div>
     <div class="mensagem__erro"
     *ngIf="formulario.get('conteudo')?.errors?.['minlength'] && formulario.get('conteudo')?.touched">
-      Autoria precisa ter 3 ou mais caracteres!
+      Pensamento precisa ter 3 ou mais caracteres!
     </div>
     <label for="autoria">Autoria ou fonte</label>
     <input
@@ -46,10 +46,7 @@
     <div class="container-radio">
       <div class="radio-modelo">
         <label for="modelo1">
-          <input
-            type="radio"
-            id="modelo1"
-            value="modelo1"
+          <input type="radio" id="modelo1" value="modelo1"
             formControlName="modelo"
           >
           <div class="custom-radio">

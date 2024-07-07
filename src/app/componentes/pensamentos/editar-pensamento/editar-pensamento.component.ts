@@ -31,10 +31,21 @@ modelo: ''
     const id = this.route.snapshot.paramMap.get('id')
     this.service.buscarPorId(id!).subscribe((pensamento)=>{
     this.pensamento = pensamento
-    this.criarFormulario()
 
+    this.formulario = this.formBuilder.group({
+      conteudo: [this.pensamento.conteudo , Validators.compose([
+        Validators.required,
+        Validators.pattern(/(.|\s)*\S(.|\s)*/),
+        Validators.minLength(3)
+      ])],
+      autoria: [this.pensamento.autoria, Validators.compose([
+        Validators.required,
+        Validators.minLength(3),
+        minusculoValidator
+      ])],
+      modelo: ['modelo1']
     })
-
+    })
 
 
 
