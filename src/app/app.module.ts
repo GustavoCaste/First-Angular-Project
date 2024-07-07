@@ -12,6 +12,7 @@ import { PensamentoComponent } from './componentes/pensamentos/pensamento/pensam
 import { HttpClientModule } from '@angular/common/http';
 import { ExcluirPensamentoComponent } from './componentes/pensamentos/excluir-pensamento/excluir-pensamento.component';
 import { EditarPensamentoComponent } from './componentes/pensamentos/editar-pensamento/editar-pensamento.component';
+import { BotaoCarregarMaisComponent } from './componentes/pensamentos/listar-pensamento/botao-carregar-mais/botao-carregar-mais.component';
 
 const routes: Routes = [
   {
@@ -46,7 +47,8 @@ const routes: Routes = [
     ListarPensamentoComponent,
     PensamentoComponent,
     ExcluirPensamentoComponent,
-    EditarPensamentoComponent
+    EditarPensamentoComponent,
+    BotaoCarregarMaisComponent
 
   ],
   imports: [
