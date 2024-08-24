@@ -28,6 +28,12 @@ export class PensamentoService {
     return this.http.post<Pensamento>(this.API, pensamento)
 
   }
+
+  mudarFavorito(pensamento: Pensamento): Observable<Pensamento>{
+    pensamento.favorito = !pensamento.favorito;
+    return this.editar(pensamento)
+  }
+
   excluir(id: string): Observable<Pensamento> {
     const url = `${this.API}/${id}`
     return this.http.delete<Pensamento>(url)
