@@ -4,79 +4,99 @@
       "id": "1",
       "conteudo": "Conteudo de teste 1",
       "autoria": "Gustavo lima",
-      "modelo": "modelo1"
+      "modelo": "modelo1",
+      "favorito": false
     },
     {
       "conteudo": "Teste editado",
       "autoria": "Novo teste 2",
       "modelo": "modelo3",
-      "id": "4"
+      "id": "4",
+      "favorito": false
     },
     {
       "conteudo": "123",
       "autoria": "123",
       "modelo": "modelo1",
-      "id": "tLRogph"
+      "id": "tLRogph",
+      "favorito": false
     },
     {
       "conteudo": "Novo exemplo",
       "autoria": "gustavo",
       "modelo": "modelo1",
-      "id": "k9d4sfH"
+      "id": "k9d4sfH",
+      "favorito": false
     },
     {
       "conteudo": "Algum pensamento",
       "autoria": "guga",
       "modelo": "modelo1",
-      "id": "OoxDse-"
+      "id": "OoxDse-",
+      "favorito": false
     },
     {
       "conteudo": "TesteTeste",
       "autoria": "programador",
       "modelo": "modelo1",
-      "id": "g7VxEul"
+      "id": "g7VxEul",
+      "favorito": false
     },
     {
       "conteudo": "Aprendendo angular",
       "autoria": "dev",
       "modelo": "modelo1",
-      "id": "g9yDCv-"
+      "id": "g9yDCv-",
+      "favorito": false
     },
     {
       "conteudo": "Mais um exemplo",
       "autoria": "programador",
       "modelo": "modelo1",
-      "id": "9qEd-CO"
+      "id": "9qEd-CO",
+      "favorito": false
     },
     {
       "conteudo": "Último exemplo",
       "autoria": "gustavo",
       "modelo": "modelo1",
-      "id": "Rw3Xf1X"
+      "id": "Rw3Xf1X",
+      "favorito": false
     },
     {
       "conteudo": "123",
       "autoria": "1234",
       "modelo": "modelo1",
-      "id": "qzpL_TP"
+      "id": "qzpL_TP",
+      "favorito": false
     },
     {
       "conteudo": "123445",
       "autoria": "21413231",
       "modelo": "modelo1",
-      "id": "F2TQhGN"
+      "id": "F2TQhGN",
+      "favorito": false
     },
     {
       "conteudo": "abcde",
       "autoria": "abcde",
       "modelo": "modelo1",
-      "id": "b9rmv1f"
+      "id": "b9rmv1f",
+      "favorito": false
     },
     {
       "conteudo": "azazaz",
       "autoria": "azazaz",
       "modelo": "modelo1",
-      "id": "jeiVEOq"
+      "id": "jeiVEOq",
+      "favorito": false
+    },
+    {
+      "conteudo": "AAA",
+      "autoria": "aewaewaewaew",
+      "modelo": "modelo2",
+      "favorito": false,
+      "id": "ywdOWXP"
     }
   ]
 }

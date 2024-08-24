@@ -3,11 +3,17 @@
   <p class="conteudo">{{ pensamento.conteudo }}</p>
   <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
   <div class="acoes">
+    <button class="botao-favorito" >
+      <img src="/assets/Imagens/icone-favorito-{{ mudarIconeFavorito() }}.png"
+      alt="Favorite icon {{ mudarIconeFavorito() }}">
+    </button>
     <button class="botao-editar" routerLink="/pensamentos/editarPensamento/{{pensamento.id}}">
       <img src="../../../../assets/Imagens/icone-editar.png" alt="Edit Icon">
     </button>
     <button class="botao-excluir" routerLink="/pensamentos/excluirPensamento/{{pensamento.id}}">
       <img src="../../../../assets/Imagens/icone-excluir.png" alt="Ícone de excluir">
   </button>
+
+
   </div>
 </div>

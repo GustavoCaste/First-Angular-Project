@@ -15,7 +15,8 @@ export class CriarPensamentoComponent implements OnInit {
     id: '',
     conteudo: '',
     autoria: '',
-    modelo: ''
+    modelo: '',
+    favorito: false
   }
 
   constructor(
@@ -38,7 +39,8 @@ export class CriarPensamentoComponent implements OnInit {
 
 
       ])],
-      modelo: ['modelo1']
+      modelo: ['modelo1'],
+      favorito: [false]
     })
   }
 

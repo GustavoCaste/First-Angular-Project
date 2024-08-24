@@ -16,7 +16,8 @@ pensamento: Pensamento = {
 id: '',
 conteudo: '',
 autoria: '',
-modelo: ''
+modelo: '',
+favorito: false
 }
 
   constructor(
@@ -43,7 +44,8 @@ modelo: ''
         Validators.minLength(3),
         minusculoValidator
       ])],
-      modelo: ['modelo1']
+      modelo: ['modelo1'],
+      favorito: [pensamento.favorito]
     })
     })
 

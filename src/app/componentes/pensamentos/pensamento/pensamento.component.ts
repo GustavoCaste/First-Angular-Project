@@ -1,5 +1,6 @@
+import { Pensamento } from './../pensamento';
 import { Component, Input, OnInit } from '@angular/core';
-import { Pensamento } from '../pensamento';
+
 
 @Component({
   selector: 'app-pensamento',
@@ -12,7 +13,8 @@ export class PensamentoComponent implements OnInit {
   id: '',
   conteudo: 'Angular Project',
   autoria: 'GustavoCaste',
-  modelo: 'modelo3'
+  modelo: 'modelo3',
+  favorito: false
 }
 
   constructor() { }
@@ -25,4 +27,13 @@ if (this.pensamento.conteudo.length >= 256){
   return 'pensamento-g'
   }
   return 'pensamento-p'
-}}
+}
+mudarIconeFavorito(): string{
+  if(this.pensamento.favorito == false){
+    return 'inativo'
+  }
+  return 'ativo'
+
+}
+}
+
